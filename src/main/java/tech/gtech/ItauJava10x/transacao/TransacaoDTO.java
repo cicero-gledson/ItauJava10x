@@ -1,4 +1,4 @@
-package tech.gtech.ItauJava10x;
+package tech.gtech.ItauJava10x.transacao;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

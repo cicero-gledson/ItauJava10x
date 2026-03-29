@@ -1,12 +1,15 @@
-package tech.gtech.ItauJava10x;
+package tech.gtech.ItauJava10x.transacao;
 
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/transacao")
-public class TransacoesController {
+public class TransacoesController implements tech.gtech.ItauJava10x.doc.TransacoesController {
 
     private final TransacaoService transacaoService;
     private final TransacaoRepository transacaoRepository;

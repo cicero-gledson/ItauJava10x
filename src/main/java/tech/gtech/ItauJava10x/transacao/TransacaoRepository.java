@@ -1,4 +1,4 @@
-package tech.gtech.ItauJava10x;
+package tech.gtech.ItauJava10x.transacao;
 
 import org.springframework.stereotype.Repository;
 
@@ -15,5 +15,9 @@ public class TransacaoRepository {
 
     public void deletarDados(){
         listaDeTransacoes.clear();
+    }
+
+    public List<TransacaoDTO> getListaDeTransacoes() {
+        return listaDeTransacoes;
     }
 }
